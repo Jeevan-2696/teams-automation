@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
 //import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -25,9 +26,10 @@ public class BaseClass {
         driver.get("https://leviticaconnect.com/");
     }
 
-   /* @AfterMethod
+   @AfterMethod
     public void closeBrowser() {
         if (driver != null) {
             driver.quit();
-        }*/
-    }
+        }
+   }
+}

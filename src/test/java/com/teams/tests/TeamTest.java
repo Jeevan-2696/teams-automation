@@ -20,8 +20,8 @@ public class TeamTest extends BaseClass {
         TeamPage team = new TeamPage(driver);
 
         team.createTeam(
-                "Automation Team",
-                "automation-team",
+                "manual Team",
+                "manual-team",
                 "Automation Testing Team");
 
         Thread.sleep(5000);

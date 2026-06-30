@@ -15,7 +15,7 @@ public class ChatTest extends BaseClass {
 
         LoginPage login = new LoginPage(driver);
 
-        login.login("jeevankalyan261@gmail.com", "Admin@1234");
+        login.login("jeevankalyan261@gmail.com", "Admin@12345");
 
         Thread.sleep(5000);
 

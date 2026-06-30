@@ -18,7 +18,7 @@ public class RegistrationTest extends BaseClass {
                 "outlook.com",
                 "9876543210",
                 "Hyderabad",
-                "gjeevankalyan26@outlook.com",
+                "jeevankalyan26@outlook.com",
                 "Admin@1234",
                 "Admin@1234"
         );
