@@ -18,7 +18,7 @@ public class LoginTest extends BaseClass {
 
         loginPage.enterEmail("jeevankalyan261@gmail.com"); 
 
-        loginPage.enterPassword("Admin@1234"); 
+        loginPage.enterPassword("Admin@123"); 
 
         
         loginPage.clickLoginButton();

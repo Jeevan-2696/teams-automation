@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.teams.tests.BillingTest">
+      <class name="com.teams.tests.LoginTest">
         <methods>
           <include name="launchBrowser"/>
-          <include name="verifyBillingFlow"/>
           <include name="closeBrowser"/>
+          <include name="verifyLoginLogout"/>
         </methods>
-      </class> <!-- com.teams.tests.BillingTest -->
+      </class> <!-- com.teams.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
