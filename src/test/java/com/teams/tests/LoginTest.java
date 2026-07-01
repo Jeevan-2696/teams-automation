@@ -13,12 +13,12 @@ public class LoginTest extends BaseClass {
       
         LoginPage loginPage = new LoginPage(driver);
 
-       
+         //click on login link
         loginPage.clickSignIn();
 
         loginPage.enterEmail("jeevankalyan261@gmail.com"); 
-
-        loginPage.enterPassword("Admin@123"); 
+        	
+        loginPage.enterPassword("Admin@1234"); 
 
         
         loginPage.clickLoginButton();
