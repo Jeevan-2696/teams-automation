@@ -20,7 +20,7 @@ public class RegistrationTest extends BaseClass {
                 "Hyderabad",
                 "jeevankalyan26@outlook.com",
                 "Admin@1234",
-                "Admin@12345"
+                "Admin@1234"
         );
     }
 }
