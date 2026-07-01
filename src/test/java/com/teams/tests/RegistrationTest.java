@@ -11,7 +11,7 @@ public class RegistrationTest extends BaseClass {
     public void verifyCompanyRegistration() {
 
         RegistrationPage registrationPage = new RegistrationPage(driver);
-
+        //enter reg details
         registrationPage.registerCompany(
                 "Jeevan Kalyan",
                 "Software Solutions Pvt Ltd",
