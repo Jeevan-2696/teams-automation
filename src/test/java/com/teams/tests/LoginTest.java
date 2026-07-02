@@ -27,7 +27,7 @@ public class LoginTest extends BaseClass {
         Thread.sleep(5000);
 
       
-        loginPage.clickProfileButton();
+        loginPage.clickProfile();
 
         
         Thread.sleep(5000);

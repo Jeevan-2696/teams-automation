@@ -2,40 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-01T11:20:00 IST" name="Default suite" finished-at="2026-07-01T11:20:37 IST" duration-ms="36764">
+  <suite started-at="2026-07-02T10:17:58 IST" name="Default suite" finished-at="2026-07-02T10:18:28 IST" duration-ms="30544">
     <groups>
     </groups>
-    <test started-at="2026-07-01T11:20:00 IST" name="Default test" finished-at="2026-07-01T11:20:37 IST" duration-ms="36764">
+    <test started-at="2026-07-02T10:17:58 IST" name="Default test" finished-at="2026-07-02T10:18:28 IST" duration-ms="30544">
       <class name="com.teams.tests.LoginTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.teams.tests.LoginTest@bae7dc0]" started-at="2026-07-01T11:20:00 IST" name="launchBrowser" finished-at="2026-07-01T11:20:29 IST" duration-ms="28504" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.teams.tests.LoginTest@bae7dc0]" started-at="2026-07-02T10:17:58 IST" name="launchBrowser" finished-at="2026-07-02T10:18:00 IST" duration-ms="1797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyLoginLogout()[pri:0, instance:com.teams.tests.LoginTest@bae7dc0]" started-at="2026-07-01T11:20:29 IST" name="verifyLoginLogout" finished-at="2026-07-01T11:20:36 IST" duration-ms="7331" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method signature="verifyLoginLogout()[pri:0, instance:com.teams.tests.LoginTest@bae7dc0]" started-at="2026-07-02T10:18:00 IST" name="verifyLoginLogout" finished-at="2026-07-02T10:18:27 IST" duration-ms="27121" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression [.//p[contains(text(),'Jeevan Kalyan')] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[.//p[contains(text(),'Jeevan Kalyan')]' is not a valid XPath expression.
+              <![CDATA[element click intercepted: Element <button class="flex items-center gap-3 rounded-xl hover:bg-brand-neutral/20 transition-colors p-2" type="button" id="radix-_r_6_" aria-haspopup="menu" aria-expanded="true" data-state="open" data-slot="dropdown-menu-trigger" aria-controls="radix-_r_7_">...</button> is not clickable at point (1156, 39). Other element would receive the click: <html lang="en">...</html>
   (Session info: chrome=149.0.7827.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b59030b91eaf98591429234ad5175af, findElement {using=xpath, value=[.//p[contains(text(),'Jeevan Kalyan')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\jeevi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50176}, goog:processID: 25000, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50176/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b59030b91eaf98591429234ad5175af]]>
+Command: [28a1363e1937a2539838a85344d34ce9, clickElement {id=f.3BF0E92ABD86BF711F17512897D13C84.d.B876C3626FADABFF9915658A035C5493.e.158}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\jeevi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51868}, goog:processID: 14960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51868/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (28a1363e1937a2539838a85344d34ce9)] -> xpath: //button[@data-slot='dropdown-menu-trigger']]
+Session ID: 28a1363e1937a2539838a85344d34ce9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [.//p[contains(text(),'Jeevan Kalyan')] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '[.//p[contains(text(),'Jeevan Kalyan')]' is not a valid XPath expression.
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="flex items-center gap-3 rounded-xl hover:bg-brand-neutral/20 transition-colors p-2" type="button" id="radix-_r_6_" aria-haspopup="menu" aria-expanded="true" data-state="open" data-slot="dropdown-menu-trigger" aria-controls="radix-_r_7_">...</button> is not clickable at point (1156, 39). Other element would receive the click: <html lang="en">...</html>
   (Session info: chrome=149.0.7827.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b59030b91eaf98591429234ad5175af, findElement {using=xpath, value=[.//p[contains(text(),'Jeevan Kalyan')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\jeevi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50176}, goog:processID: 25000, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50176/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b59030b91eaf98591429234ad5175af
+Command: [28a1363e1937a2539838a85344d34ce9, clickElement {id=f.3BF0E92ABD86BF711F17512897D13C84.d.B876C3626FADABFF9915658A035C5493.e.158}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\jeevi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51868}, goog:processID: 14960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51868/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (28a1363e1937a2539838a85344d34ce9)] -> xpath: //button[@data-slot='dropdown-menu-trigger']]
+Session ID: 28a1363e1937a2539838a85344d34ce9
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,15 +46,11 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at com.teams.pages.LoginPage.clickProfileButton(LoginPage.java:60)
-at com.teams.tests.LoginTest.verifyLoginLogout(LoginTest.java:30)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.teams.pages.LoginPage.clickProfile(LoginPage.java:51)
+at com.teams.pages.LoginPage.logout(LoginPage.java:74)
+at com.teams.tests.LoginTest.verifyLoginLogout(LoginTest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,11 +81,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginLogout -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.teams.tests.LoginTest@bae7dc0]" started-at="2026-07-01T11:20:36 IST" name="closeBrowser" finished-at="2026-07-01T11:20:37 IST" duration-ms="884" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.teams.tests.LoginTest@bae7dc0]" started-at="2026-07-02T10:18:27 IST" name="closeBrowser" finished-at="2026-07-02T10:18:28 IST" duration-ms="1561" status="PASS">
           <params>
             <param index="0">
               <value>

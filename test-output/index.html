@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\jeevi\AppData\Local\Temp\testng-eclipse-1203597646\testng-customsuite.xml</span>
+                    <span>C:\Users\jeevi\AppData\Local\Temp\testng-eclipse-2029201211\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,16 +130,15 @@
                   <a name="verifyLoginLogout">
                   </a> <!-- verifyLoginLogout -->
                   <span class="method-name">verifyLoginLogout</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression [.//p[contains(text(),&apos;Jeevan Kalyan&apos;)] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;[.//p[contains(text(),&apos;Jeevan Kalyan&apos;)]&apos; is not a valid XPath expression.
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;flex items-center gap-3 rounded-xl hover:bg-brand-neutral/20 transition-colors p-2&quot; type=&quot;button&quot; id=&quot;radix-_r_6_&quot; aria-haspopup=&quot;menu&quot; aria-expanded=&quot;true&quot; data-state=&quot;open&quot; data-slot=&quot;dropdown-menu-trigger&quot; aria-controls=&quot;radix-_r_7_&quot;&gt;...&lt;/button&gt; is not clickable at point (1156, 39). Other element would receive the click: &lt;html lang=&quot;en&quot;&gt;...&lt;/html&gt;
   (Session info: chrome=149.0.7827.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b59030b91eaf98591429234ad5175af, findElement {using=xpath, value=[.//p[contains(text(),&apos;Jeevan Kalyan&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\jeevi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50176}, goog:processID: 25000, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50176/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b59030b91eaf98591429234ad5175af
+Command: [28a1363e1937a2539838a85344d34ce9, clickElement {id=f.3BF0E92ABD86BF711F17512897D13C84.d.B876C3626FADABFF9915658A035C5493.e.158}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.104, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\jeevi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51868}, goog:processID: 14960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51868/devtoo..., se:cdpVersion: 149.0.7827.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (28a1363e1937a2539838a85344d34ce9)] -&gt; xpath: //button[@data-slot=&apos;dropdown-menu-trigger&apos;]]
+Session ID: 28a1363e1937a2539838a85344d34ce9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,15 +151,11 @@ Session ID: 9b59030b91eaf98591429234ad5175af
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.teams.pages.LoginPage.clickProfileButton(LoginPage.java:60)
-	at com.teams.tests.LoginTest.verifyLoginLogout(LoginTest.java:30)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.teams.pages.LoginPage.clickProfile(LoginPage.java:51)
+	at com.teams.pages.LoginPage.logout(LoginPage.java:74)
+	at com.teams.tests.LoginTest.verifyLoginLogout(LoginTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -198,7 +193,7 @@ Session ID: 9b59030b91eaf98591429234ad5175af
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\jeevi\AppData\Local\Temp\testng-eclipse-1203597646\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\jeevi\AppData\Local\Temp\testng-eclipse-2029201211\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,12 +246,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginLogout')
 data.setCell(0, 2, 'com.teams.tests.LoginTest')
-data.setCell(0, 3, 7331);
+data.setCell(0, 3, 27121);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -291,11 +286,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyLoginLogout</span>
-                <span class="method-start">28508 ms</span>
+                <span class="method-start">1812 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser([TestResult name=verifyLoginLogout status=FAILURE method=LoginTest.verifyLoginLogout()[pri:0, instan...)</span>
-                <span class="method-start">35855 ms</span>
+                <span class="method-start">28947 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
