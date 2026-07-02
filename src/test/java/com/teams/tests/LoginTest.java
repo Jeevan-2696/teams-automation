@@ -27,13 +27,13 @@ public class LoginTest extends BaseClass {
         Thread.sleep(5000);
 
       
-        loginPage.clickProfileButton();
+        loginPage.clickProfile();
 
         
         Thread.sleep(5000);
 
       
-        loginPage.logout();
+        loginPage.clickSignOut();
 
        
         Thread.sleep(3000);

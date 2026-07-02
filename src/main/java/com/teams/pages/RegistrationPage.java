@@ -26,6 +26,8 @@ public class RegistrationPage {
     By confirmPassword = By.xpath("//input[@placeholder='Confirm password']");
     By continueButton = By.xpath("//button[contains(text(),'Continue')]");
 
+    //Methods
+    
     public void clickGetStarted() {
         driver.findElement(getStartedButton).click();
     }
@@ -75,7 +77,7 @@ public class RegistrationPage {
 
         clickGetStarted();
         clickCompanyTab();
-
+        
         enterFullName(name);
         enterCompanyName(cname);
         enterCompanyDomain(domain);

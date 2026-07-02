@@ -1,19 +1,20 @@
 package com.teams.pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class LoginPage {
 
     WebDriver driver;
+    WebDriverWait wait;   // <-- ADD THIS FIELD
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));  // <-- ADD THIS LINE
     }
 
     // Locators
@@ -21,8 +22,8 @@ public class LoginPage {
     By email = By.xpath("//input[@placeholder='Enter your email address']");
     By password = By.xpath("//input[@placeholder='Enter your password']");
     By signInButton = By.xpath("//button[contains(text(),'Login')]");
-    By profileButton = By.xpath("[.//p[contains(text(),'Jeevan Kalyan')]");
-    By logoutButton = By.xpath(".//span[normalize-space()='Sign out']]");
+    By profileIcon = By.xpath("//button[@data-slot='dropdown-menu-trigger']");
+    By signOut = By.xpath("//span[text()='Sign out']");
 
     // Click Sign In
     public void clickSignIn() {
@@ -44,6 +45,21 @@ public class LoginPage {
         driver.findElement(signInButton).click();
     }
 
+  
+    public void clickProfile() {
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[data-sonner-toast]")));
+        WebElement profile = wait.until(ExpectedConditions.elementToBeClickable(profileIcon));
+        profile.click();
+    }
+
+
+
+    // Click Sign Out
+    public void clickSignOut() {
+        wait.until(ExpectedConditions.elementToBeClickable(signOut)).click();
+    }
+
+    
     // Complete Login
     public void login(String mail, String pwd) {
 
@@ -53,28 +69,10 @@ public class LoginPage {
         clickLoginButton();
     }
 
-    // Click Profile
-    public void clickProfileButton() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(profileButton));
-
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", driver.findElement(profileButton));
-    }
-
-
-    public void clickLogoutButton() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(logoutButton));
-
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", driver.findElement(logoutButton));
-    }
+   
     // Complete Logout
     public void logout() {
-        clickProfileButton();
-        clickLogoutButton();
+    	clickProfile();
+        clickSignOut();
     }
 }
