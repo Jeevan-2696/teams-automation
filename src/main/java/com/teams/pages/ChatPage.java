@@ -13,7 +13,7 @@ public class ChatPage {
 
     // Locators
     By chatIcon = By.xpath("//span[normalize-space()='Chat']/ancestor::button");
-    By userName = By.xpath("//h3[normalize-space()='Janvitha']");
+    By userName = By.xpath("//h3[normalize-space()='Jeevitha']");
     By messageBox = By.xpath("//textarea[@placeholder='type a message...']");
     By sendButton = By.xpath("//button[contains(@class,'bg-gradient-to-r')]");
 

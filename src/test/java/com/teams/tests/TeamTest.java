@@ -13,7 +13,7 @@ public class TeamTest extends BaseClass {
 
         LoginPage login = new LoginPage(driver);
 
-        login.login("jeevankalyan261@gmail.com", "Admin@1234");
+        login.login("leviticaconnect@gmail.com", "Admin@123");
 
         Thread.sleep(5000);
 

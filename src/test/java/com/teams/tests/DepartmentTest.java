@@ -15,7 +15,7 @@ public class DepartmentTest extends BaseClass {
         
         loginPage.clickSignIn();
 
-        loginPage.login("jeevankalyan261@gmail.com", "Admin@1234");
+        loginPage.login("leviticaconnect@gmail.com", "Admin@123");
 
         Thread.sleep(5000);
 

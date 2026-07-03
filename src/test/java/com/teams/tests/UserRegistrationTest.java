@@ -13,11 +13,11 @@ public class UserRegistrationTest extends BaseClass {
         UserRegistrationPage registration = new UserRegistrationPage(driver);
 
         registration.registerUser(
-                "srujan kumar",
-                "srujankumar@outlook.com",
-                "9876543210",
-                "User@123",
-                "User@123"
+                "sairam",
+                "sairamk@gmail.com",
+                "9876543280",
+                "Sairam@1234",
+                "Sairam@1234"
         );
     }
 }

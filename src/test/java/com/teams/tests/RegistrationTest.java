@@ -14,11 +14,11 @@ public class RegistrationTest extends BaseClass {
 
         registrationPage.registerCompany(
                 "Jeevan Kalyan",
-                "Software Solutions Pvt Ltd",
+                "Jeevitha Software Solutions Pvt Ltd",
                 "outlook.com",
                 "9876543210",
                 "Hyderabad",
-                "jeevankalyan26@outlook.com",
+                "gjeevankalyan26@outlook.com",
                 "Admin@1234",
                 "Admin@1234"
         );

@@ -15,16 +15,16 @@ public class SettingsTest extends BaseClass {
 
         LoginPage login = new LoginPage(driver);
 
-        login.login("jeevankalyan261@gmail.com", "Admin@1234");
+        login.login("leviticaconnect@gmail.com", "Admin@123");
 
         Thread.sleep(5000);
 
         SettingsPage settings = new SettingsPage(driver);
 
         settings.changePassword(
+                "Admin@123",
                 "Admin@1234",
-                "Admin@12345",
-                "Admin@12345"
+                "Admin@1234"
         );
 
         Thread.sleep(5000);
